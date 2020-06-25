@@ -1,0 +1,174 @@
+
+.container {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    margin-top: 70px;
+    margin-left: 30px;
+    height: 100%;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5, 4fr);
+    grid-template-rows: 110px 70px 40px 150px;
+    grid-template-areas: 
+        "h h h h h"
+        "n n n n n"
+        "s s s s s"
+        "a a a a a"
+        "b b b b b"
+        "i i i i i"
+        ;
+}
+
+.header {
+    text-align: center;
+    font-size: 3.5em;
+    grid-area: h; 
+}
+
+.nav-bar {
+    text-align: center;
+    grid-area: n;
+}
+
+.button {
+    background-color:rgb(30, 30, 30);
+    color: #fff;
+    padding:10px 15px;
+    border:none;
+    text-decoration: none;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 2.5em;
+    grid-area: s;
+}
+
+.p1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.0em;
+    grid-area: a;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+
+.image {
+    text-align: center;
+    grid-area: i;
+    margin-left: -55px;
+    margin-top: 20px;
+    
+    }
+
+.p2 {
+    text-align: center;
+    font-size: 1.0em;
+    grid-area: b;
+    margin-left: 60px;
+    margin-right: 50px;
+}
+
+#footer {
+    background-color:rgb(30, 30, 30);
+    color: #fff;
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    right:0px;
+}   
+
+#footer ul{
+    padding: auto;
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#footer li{
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+#footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+.footer {
+     width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media (min-width:700px) {
+    .container {
+        margin-left: 30px;
+    }
+}
+@media (min-width:850px) {
+    .container {
+        margin-left: 40px;
+    }
+}
+@media (min-width:1000px) {
+    .container {
+        margin-left: 50px;
+    }
+}
+@media (min-width:1000px) {
+    .container {
+        margin-left: 60px;
+    }
+}
+@media (min-width:1250px) {
+    .container {
+        margin-left: 70px;
+    }
+
+}
+@media (min-width:1500px) {
+    .container {
+        margin-left: 80px;
+    }
+
+}
+@media (min-width: 1700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(5, 4fr);
+        grid-template-areas: 
+            ". . . . ."
+            "h h . s ."
+            ". . a a a"
+            "n n . . ."
+            ". . i i i"
+            ". . i i i"
+            ". . . . ."
+            ;
+    }
+
+    .subtitle {
+        grid-area: s;
+        margin-left: 300px;
+    }
+    
+    .p1 {
+        grid-area: a;
+        margin-left: 350px;
+    
+    }
+    
+    
+    .image {
+        grid-area: i;
+        margin-left: 250px;
+        
+        }
+
+}

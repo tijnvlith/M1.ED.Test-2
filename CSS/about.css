@@ -1,0 +1,153 @@
+.container {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    color: white;
+    margin: 0px 50px;
+    margin-top: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:100px 40px 80px 130px 340px 120px;
+    grid-template-areas: 
+    "h h h h"
+    "n n n n"
+    "s s s s"
+    "t t t t"
+    "i i i i"
+    "b b b b"
+    ;
+}
+
+.header {
+    align-self: center;
+    text-align: center;
+    grid-area: h;
+    color: white;
+}
+
+.nav-bar {
+    align-self: center;
+    text-align: center;
+    grid-area: n;
+}
+
+.button {
+    background-color:rgb(30, 30, 30);
+    color: #fff;
+    padding:10px 15px;
+    border:none;
+    text-decoration: none;
+}
+
+.subtitle {
+    align-self: center;
+    text-align: center;
+    grid-area: s;
+}
+
+.top {
+    text-align: center;
+    grid-area: t;
+    margin-bottom: 40px;
+}
+
+.image {
+    grid-area: i;
+    text-align: center;
+    background-color: none;
+    
+}
+
+.bottom {
+    align-self: center;
+    text-align: center;
+    grid-area: b;
+}
+
+#footer {
+    background-color:rgb(30, 30, 30);
+    color: #fff;
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    right:0px;
+}   
+
+#footer ul{
+    padding: auto;
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#footer li{
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+#footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+.footer {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media (min-width:900px) {.container {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:100px 100px auto 500px;
+    justify-items: stretch;
+    grid-template-areas: 
+    "h h . ."
+    "n n s s"
+    "t t t t"
+    "i i i i"
+    "b b b b"
+        ;
+}
+   .top {
+       margin: 0px 40px;
+       margin-bottom: 20px;
+   }
+
+   .bottom {
+       margin-top: -200px;
+       margin-right: 10px;
+   }
+
+   .image {
+        height: 70%;
+}
+}
+
+@media (min-width:1100px) {
+    
+    .image {    height: 80%;        }
+
+    .bottom {   margin-top: -100px; }
+
+}
+
+@media (min-width:1300px) {
+    
+    .image {height: 90%;}
+
+    .bottom {margin-top: -80px; margin-left: 100px; margin-right: 100px;}
+
+    .top {margin-left: 100px; margin-right: 100px;}
+
+}
+
+@media (min-width:1500px) {
+
+    .bottom {margin-left: 200px; margin-right: 200px;}
+
+    .top {margin-left: 200px; margin-right: 200px;}
+}

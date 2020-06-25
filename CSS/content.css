@@ -1,0 +1,174 @@
+.container {
+    background-color: #FDE6DB;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid; 
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: 70px 100px 50px 50px 700px 100px 400px;
+    grid-template-areas: 
+    ". ."
+    "h h"
+    "n n"
+    "p p"
+    "s s"
+    "m m"
+    "a b"
+    "a b"
+    ". .";
+}
+
+.header {
+    text-align: center;
+    font-size: 3.5em;
+    grid-area: h; 
+}
+
+.nav-bar {
+    text-align: center;
+    grid-area: n;
+}
+
+.button {
+    background-color:#ff5500;
+    color: #fff;
+    padding:10px 15px;
+    border:none;
+    text-decoration: none;
+}
+
+.p {
+    text-align: center;
+    grid-area: p;
+    font-size: 90%;
+    margin: 0px 50px;
+}
+
+.songs {
+    text-align: center;
+    grid-area: s;
+    margin: 0px 30px;
+}
+
+.my-art {
+    text-align: center;
+    grid-area: m;
+}
+
+.images-a {
+    margin-bottom: 120px;
+    background-color: white;
+    justify-self: end;
+    grid-area: a;
+    background-color: #FDE6DB;
+    
+}
+
+.images-b {
+    margin-bottom: 120px;
+    background-color: white;
+    text-align: center;
+    grid-area: b;
+    background-color: #FDE6DB;
+}
+
+.footer {
+    text-align: center;
+    grid-area: f;
+    text-align: center;
+}
+
+#footer {
+    background-color:rgb(30, 30, 30);
+    color: #fff;
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    right:0px;
+}   
+
+#footer ul{
+    padding: auto;
+    list-style: none;
+    text-align: center;
+    margin-right: 10px;
+}
+
+#footer li{
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+#footer a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+.footer {
+     width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+@media (min-width:600px) {
+    .container{
+        grid-template-rows: 70px 100px 50px 50px 700px 100px 600px;
+    
+}
+.p {
+    font-size: 100%;
+}
+
+}
+
+@media (min-width:700px) {
+    .container{
+        grid-template-rows: 70px 100px 50px 50px 700px 100px 700px;
+    
+}}
+
+@media (min-width:800px) {
+    .container{
+        grid-template-rows: 70px 100px 50px 50px 700px 100px 800px;
+    
+}}
+
+@media (min-width:1200px) {
+    .container{
+    display: grid;
+    margin-left: 60px;
+    margin-top: 50px;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: 5px 110px 40px 90px;
+    grid-template-areas: 
+    ". . . ."
+    "h h . ."
+    "n n p p"
+    "s s m m"
+    "s s a b"
+    ;
+    }
+
+    .p {
+    margin-top: -30px;
+    margin-right: 70px;
+    margin-bottom: 0px;
+
+    }
+    
+    .images-a {
+       
+        width: 70%;
+    }
+    
+    .images-b {
+        margin-top: 50px;
+        width: 70%;
+    }
+
+    .girl {
+        margin-bottom: 20px;
+    }
+
+}

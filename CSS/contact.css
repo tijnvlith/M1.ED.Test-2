@@ -1,0 +1,99 @@
+.container {
+    align-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    background-color: rgb(180, 138, 138);
+    grid-template-columns:auto 250px 250px auto;
+    grid-template-rows:20px 120px 60px 370px; 
+    grid-template-areas:
+    ". . . ."
+    ". h h ."
+    ". n n ."
+    ". l l. "
+    ". f f ."
+
+    ;
+}
+
+.header {
+    grid-area: h;
+    text-align: center;
+} 
+
+.nav-bar {
+    text-align: center;
+    grid-area: n;
+}
+
+.button {
+    background-color:rgb(172, 26, 26);
+    color: #fff;
+    padding:10px 15px;
+    border:none;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.links {
+    font-size: 1.6em;
+    justify-self: center;
+    grid-area: l ;
+    list-style-image: none;
+    margin-right: -60px;
+}
+
+.links li {
+    padding-bottom: 50px;
+    list-style-image: none;
+    
+}
+.links ul{
+    padding: 0;
+    list-style: none;
+}
+
+.images {
+    margin-right: 140px;
+    font-size: 1.6em;
+    justify-self: center;
+    grid-area: l ;
+    list-style-image: none;
+}
+
+.images li {
+    padding-bottom: 34px;
+    list-style-image: none;
+    
+}
+.images ul{
+    padding: 0;
+    list-style: none;
+}
+
+.form{
+    margin: -20px 70px;
+    background-color: rgb(238, 68, 68);
+    font-size: 1.2em;
+    text-align: center;
+    grid-area: f;
+}
+
+.submit {
+    background-color:rgb(172, 26, 26);
+    color: #fff;
+    padding:10px 15px;
+    margin-bottom: 25px;
+    border:none;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.icon {
+    position: fixed;
+    text-align: center;
+    bottom:5px;
+    left: 0px;
+    right:0px;
+}
